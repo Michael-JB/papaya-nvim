@@ -25,5 +25,8 @@ vim.keymap.set('v', '>', '>gv')
 -- write
 vim.keymap.set('n', '<leader>w', ':w <CR>')
 
+-- quit
+vim.keymap.set('n', '<leader>q', ':q <CR>')
+
 -- relative line numbering
 vim.opt.relativenumber = true
