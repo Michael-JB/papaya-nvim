@@ -21,13 +21,13 @@ return {
       })
 
       local builtin = require("telescope.builtin")
-      vim.keymap.set('n', '<leader>sf', builtin.find_files, {})
-      vim.keymap.set('n', '<leader>st', builtin.live_grep, {})
-      vim.keymap.set('n', '<leader>sh', builtin.help_tags, {})
-      vim.keymap.set('n', '<leader>sk', builtin.keymaps, {})
-      vim.keymap.set('n', '<leader>sr', builtin.lsp_references, {})
-      vim.keymap.set('n', '<leader>ss', builtin.treesitter, {})
-      vim.keymap.set('n', '<leader>sd', builtin.diagnostics, {})
+      vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = "Search files" })
+      vim.keymap.set('n', '<leader>st', builtin.live_grep, { desc = "Search text" })
+      vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = "Search help tags" })
+      vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = "Search keymaps" })
+      vim.keymap.set('n', '<leader>sr', builtin.lsp_references, { desc = "Search references" })
+      vim.keymap.set('n', '<leader>ss', builtin.treesitter, { desc = "Search symbols" })
+      vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = "Search diagnostics" })
 
       require("telescope").load_extension("ui-select")
     end
