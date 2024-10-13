@@ -1,8 +1,4 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-
+-- leader key
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
@@ -28,5 +24,5 @@ vim.keymap.set('n', '<leader>w', ':w <CR>')
 -- quit
 vim.keymap.set('n', '<leader>q', ':q <CR>')
 
--- relative line numbering
-vim.opt.relativenumber = true
+-- clear search highlighting
+vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
