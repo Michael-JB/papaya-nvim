@@ -24,9 +24,9 @@ return {
       lspconfig.lua_ls.setup({})
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-      vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-      vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
+      vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
       vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, {})
+      vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, {})
     end,
     dependencies = { "williamboman/mason-lspconfig.nvim" }
   }
