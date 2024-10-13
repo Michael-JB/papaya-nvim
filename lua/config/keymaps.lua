@@ -22,7 +22,8 @@ vim.keymap.set('v', '>', '>gv')
 vim.keymap.set('n', '<leader>w', ':w <CR>', { desc = "Write" })
 
 -- quit
-vim.keymap.set('n', '<leader>q', ':q <CR>', { desc = "Quit" })
+vim.keymap.set('n', '<leader>q', ':q <CR>', { desc = "Quit window" })
+vim.keymap.set('n', '<leader>Q', ':qa <CR>', { desc = "Quit Vim" })
 
 -- clear search highlighting
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>', { desc = "Clear search highlighting" })
