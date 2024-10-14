@@ -17,7 +17,8 @@ fork it as a starting point for your own configuration.
 ## Features
 
 - Lazy-loading of plugins via [lazy.nvim](https://github.com/folke/lazy.nvim)
-- Interactive file explorer via [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- Interactive file explorer via [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) and
+[nvim-window-picker](https://github.com/s1n7ax/nvim-window-picker)
 - Auto-install of LSP servers via [mason.nvim](https://github.com/williamboman/mason.nvim)
 , [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) and
 [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
