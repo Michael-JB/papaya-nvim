@@ -4,7 +4,7 @@ return {
   event = "VeryLazy",
   dependencies = {
     { "github/copilot.vim" },
-    { "nvim-lua/plenary.nvim" }
+    { "nvim-lua/plenary.nvim" },
   },
   build = "make tiktoken",
   opts = {
@@ -16,11 +16,11 @@ return {
     },
     mappings = {
       submit_prompt = {
-        insert = '<C-CR>'
+        insert = "<C-CR>",
       },
     },
   },
   keys = {
-    { "<leader>ac", "<cmd>CopilotChatToggle <CR>", desc = "Toggle copilot chat" }
+    { "<leader>ac", "<cmd>CopilotChatToggle <CR>", desc = "Toggle copilot chat" },
   },
 }

@@ -12,8 +12,8 @@ return {
       filtered_items = {
         -- Always show hidden files
         visible = true,
-      }
-    }
+      },
+    },
   },
   keys = {
     { "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Toggle file explorer" } },

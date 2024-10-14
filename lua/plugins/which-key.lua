@@ -3,5 +3,5 @@ return {
   event = "VeryLazy",
   opts = {
     delay = 1000,
-  }
+  },
 }

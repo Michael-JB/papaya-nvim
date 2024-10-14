@@ -1,22 +1,23 @@
 return {
   {
     "williamboman/mason.nvim",
-    event = "VeryLazy",
     opts = {},
-  },
-  {
-    "williamboman/mason-lspconfig.nvim",
-    event = "VeryLazy",
-    opts = {
-      automatic_installation = true,
-    },
-    dependencies = { "williamboman/mason.nvim" }
   },
   {
     "neovim/nvim-lspconfig",
     event = "VeryLazy",
+    dependencies = {
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+    },
     config = function()
+      require("mason").setup({})
+      require("mason-lspconfig").setup({
+        automatic_installation = true,
+      })
       local lspconfig = require("lspconfig")
+
+      -- Configure language servers here
       lspconfig.lua_ls.setup({})
       lspconfig.rust_analyzer.setup({})
 
@@ -28,6 +29,5 @@ return {
       vim.keymap.set("n", "<leader>lk", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
       vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { desc = "Rename symbol" })
     end,
-    dependencies = { "williamboman/mason-lspconfig.nvim" }
-  }
+  },
 }
