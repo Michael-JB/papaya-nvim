@@ -30,6 +30,8 @@ fork it as a starting point for your own configuration.
 - Annotated keymaps via [which-key.nvim](https://github.com/folke/which-key.nvim)
 - GitHub Copilot via [copilot.vim](https://github.com/github/copilot.vim) and
 [CopilotChat.nvim](https://github.com/CopilotC-Nvim/CopilotChat.nvim)
+- Seamless navigation to tmux via
+[nvim-tmux-navigation](https://github.com/alexghergh/nvim-tmux-navigation)
 - ...
 
 ## Installation
