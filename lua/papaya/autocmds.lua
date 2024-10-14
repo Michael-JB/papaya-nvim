@@ -7,3 +7,14 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     vim.highlight.on_yank({ higroup = "IncSearch", timeout = 100 })
   end,
 })
+
+-- automatically resize vim windows when the terminal is resized
+vim.api.nvim_create_autocmd("VimResized", {
+  group = vim.api.nvim_create_augroup("resize_window", {}),
+  desc = "Resize windows on VimResized",
+  pattern = "*",
+  callback = function()
+    vim.api.nvim_command("wincmd =")
+    vim.highlight.on_yank({ higroup = "IncSearch", timeout = 100 })
+  end,
+})
