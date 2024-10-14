@@ -6,7 +6,10 @@ return {
       conform.setup({
         formatters_by_ft = {
           -- Configure formatters here
-          lua = { "stylua", lsp_format = "fallback" },
+          lua = { "stylua" },
+        },
+        default_format_opts = {
+          lsp_format = "fallback",
         },
       })
       vim.keymap.set("n", "<leader>lf", conform.format, { desc = "Format file" })
