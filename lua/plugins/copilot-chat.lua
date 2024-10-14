@@ -21,6 +21,6 @@ return {
     },
   },
   keys = {
-    { "<leader>ac", "<cmd>CopilotChatToggle <CR>", { desc = "Toggle copilot chat" } }
+    { "<leader>ac", "<cmd>CopilotChatToggle <CR>", desc = "Toggle copilot chat" }
   },
 }

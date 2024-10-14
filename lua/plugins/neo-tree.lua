@@ -7,15 +7,15 @@ return {
     "nvim-tree/nvim-web-devicons",
     "MunifTanjim/nui.nvim",
   },
-  config = function()
-    require("neo-tree").setup({
-      filesystem = {
-        filtered_items = {
-          -- Always show hidden files
-          visible = true,
-        }
+  opts = {
+    filesystem = {
+      filtered_items = {
+        -- Always show hidden files
+        visible = true,
       }
-    })
-    vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "Toggle file explorer" })
-  end,
+    }
+  },
+  keys = {
+    { "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Toggle file explorer" } },
+  },
 }
