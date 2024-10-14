@@ -22,5 +22,11 @@ return {
   },
   keys = {
     { "<leader>ac", "<cmd>CopilotChatToggle <CR>", desc = "Toggle copilot chat" },
+    { "<leader>ae", "<cmd>CopilotChatExplain <CR>", desc = "Explain selection" },
+    { "<leader>ar", "<cmd>CopilotChatReview <CR>", desc = "Review selection" },
+    { "<leader>ad", "<cmd>CopilotChatDocs <CR>", desc = "Document selection" },
+    { "<leader>at", "<cmd>CopilotChatTests <CR>", desc = "Test selection" },
+    { "<leader>af", "<cmd>CopilotChatFixDiagnostic <CR>", desc = "Fix diagnostic" },
+    { "<leader>ao", "<cmd>CopilotChatOptimize <CR>", desc = "Optimize selection" },
   },
 }
