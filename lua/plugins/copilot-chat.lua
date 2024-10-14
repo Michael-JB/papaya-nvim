@@ -7,5 +7,20 @@ return {
     { "nvim-lua/plenary.nvim" }
   },
   build = "make tiktoken",
-  opts = {},
+  opts = {
+    window = {
+      layout = "float",
+      width = 0.7,
+      height = 0.7,
+      border = "rounded",
+    },
+    mappings = {
+      submit_prompt = {
+        insert = '<C-CR>'
+      },
+    },
+  },
+  keys = {
+    { "<leader>ac", "<cmd>CopilotChatToggle <CR>", { desc = "Toggle copilot chat" } }
+  },
 }
