@@ -4,10 +4,10 @@ return {
   config = function()
     local dashboard = require("alpha.themes.startify")
     local header = {
-      "┏┓              ",
-      "┃┃┏┓┏┓┏┓┓┏┏┓    ",
-      "┣┛┗┻┣┛┗┻┗┫┗┻ Vim",
-      "    ┃    ┛      ",
+      "┏┓               ",
+      "┃┃┏┓┏┓┏┓┓┏┏┓     ",
+      "┣┛┗┻┣┛┗┻┗┫┗┻ Nvim",
+      "    ┃    ┛       ",
     }
     local header_color = "Identifier" -- This is yellow in Kanagawa
 
