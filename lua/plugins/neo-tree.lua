@@ -20,6 +20,7 @@ return {
       "s1n7ax/nvim-window-picker",
     },
     opts = {
+      close_if_last_window = true,
       window = {
         mappings = {
           -- always open via the window picker
@@ -27,6 +28,7 @@ return {
         },
       },
       filesystem = {
+        hijack_netrw_behavior = "open_default",
         filtered_items = {
           -- Always show hidden files
           visible = true,

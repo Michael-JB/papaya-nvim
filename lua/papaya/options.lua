@@ -1,3 +1,7 @@
+-- disable netrw as we're using neo-tree
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- use 2 spaces instead of tabs
 vim.opt.expandtab = true
 vim.opt.tabstop = 2
