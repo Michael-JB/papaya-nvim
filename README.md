@@ -32,6 +32,7 @@ fork it as a starting point for your own configuration.
 [CopilotChat.nvim](https://github.com/CopilotC-Nvim/CopilotChat.nvim)
 - Seamless navigation to tmux via
 [nvim-tmux-navigation](https://github.com/alexghergh/nvim-tmux-navigation)
+- Light and dark themes via [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)
 - ...
 
 ## Installation
