@@ -3,8 +3,8 @@ return {
   branch = "canary",
   event = "VeryLazy",
   dependencies = {
-    { "github/copilot.vim" },
-    { "nvim-lua/plenary.nvim" },
+    "github/copilot.vim",
+    "nvim-lua/plenary.nvim",
   },
   build = "make tiktoken",
   opts = {
@@ -15,8 +15,9 @@ return {
       border = "rounded",
     },
     mappings = {
-      submit_prompt = {
-        insert = "<C-CR>",
+      complete = {
+        -- This clashes with github/copilot.vim tab completion so disable it
+        insert = "",
       },
     },
   },
