@@ -15,5 +15,7 @@ return {
     dashboard.section.header.opts.hl = header_color
     dashboard.section.header.val = header
     require("alpha").setup(dashboard.config)
+
+    vim.keymap.set("n", "<leader>;", ":Alpha<CR>", { desc = "Open dashboard" })
   end,
 }
