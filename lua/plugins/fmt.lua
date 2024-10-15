@@ -7,6 +7,7 @@ return {
         formatters_by_ft = {
           -- Configure formatters here
           lua = { "stylua" },
+          python = { "isort", "black" },
         },
         default_format_opts = {
           lsp_format = "fallback",

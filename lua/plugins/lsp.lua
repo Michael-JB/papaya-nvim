@@ -28,6 +28,7 @@ return {
       lspconfig.rust_analyzer.setup({})
       lspconfig.yamlls.setup({})
       lspconfig.helm_ls.setup({})
+      lspconfig.pylsp.setup({})
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show hover information" })
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
@@ -37,6 +38,7 @@ return {
       vim.keymap.set("n", "<leader>lk", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
       vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { desc = "Rename symbol" })
       vim.keymap.set("n", "<leader>li", ":LspInfo<CR>", { desc = "Show LSP information" })
+      vim.keymap.set("n", "<leader>lm", ":Mason<CR>", { desc = "Open Mason" })
     end,
   },
 }
