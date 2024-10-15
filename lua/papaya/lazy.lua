@@ -20,3 +20,5 @@ require("lazy").setup({
   install = { colorscheme = { "kanagawa" } },
   checker = { enabled = true },
 })
+
+vim.keymap.set("n", "<leader>pl", ":Lazy<CR>", { desc = "Open Lazy" })
