@@ -35,8 +35,19 @@ fork it as a starting point for your own configuration.
 - Light and dark themes via [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)
 - ...
 
-## Installation
-
-### Prerequisites
+## Prerequisites
 
 (TODO)
+
+## Install
+
+1. Clone this repository to `~/.config/nvim`:
+
+```sh
+mkdir -p ~/.config
+git clone git@github.com:Michael-JB/papaya-nvim.git ~/.config/nvim
+```
+
+2. Run `nvim`. It will automatically install the plugins.
+
+3. Run `:checkhealth` to make sure everything is set up correctly.
