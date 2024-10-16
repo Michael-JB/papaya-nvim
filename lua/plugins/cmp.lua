@@ -1,6 +1,7 @@
 return {
   "hrsh7th/nvim-cmp",
-  event = "InsertEnter",
+  -- Prefer over `InsertEnter` to allow other plugins to register sources
+  event = "VeryLazy",
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-buffer",

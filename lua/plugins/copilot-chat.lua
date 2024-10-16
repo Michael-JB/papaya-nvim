@@ -1,25 +1,10 @@
 return {
   "CopilotC-Nvim/CopilotChat.nvim",
   branch = "canary",
-  event = "VeryLazy",
   dependencies = {
     "github/copilot.vim",
     "nvim-lua/plenary.nvim",
-  },
-  build = "make tiktoken",
-  opts = {
-    window = {
-      layout = "float",
-      width = 0.7,
-      height = 0.7,
-      border = "rounded",
-    },
-    mappings = {
-      complete = {
-        -- This clashes with github/copilot.vim tab completion so disable it
-        insert = "",
-      },
-    },
+    "hrsh7th/nvim-cmp",
   },
   keys = {
     { "<leader>ac", "<cmd>CopilotChatToggle <CR>", mode = { "n", "v" }, desc = "Toggle copilot chat" },
@@ -30,4 +15,23 @@ return {
     { "<leader>af", "<cmd>CopilotChatFixDiagnostic <CR>", mode = { "n", "v" }, desc = "Fix diagnostic" },
     { "<leader>ao", "<cmd>CopilotChatOptimize <CR>", mode = { "n", "v" }, desc = "Optimize selection" },
   },
+  config = function()
+    require("CopilotChat").setup({
+      show_help = false,
+      window = {
+        layout = "float",
+        width = 0.7,
+        height = 0.7,
+        border = "rounded",
+      },
+      mappings = {
+        complete = {
+          -- This clashes with github/copilot.vim tab completion so disable it
+          insert = "",
+        },
+      },
+    })
+
+    require("CopilotChat.integrations.cmp").setup()
+  end,
 }
