@@ -26,7 +26,7 @@ fork it as a starting point for your own configuration.
 - Autocomplete via [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - Auto-formatting via [conform.nvim](https://github.com/stevearc/conform.nvim) and
 [mason-conform.nvim](https://github.com/zapling/mason-conform.nvim)
-- Fuzzy-find over everything via [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- Fuzzy-search everywhere via [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - Annotated keymaps via [which-key.nvim](https://github.com/folke/which-key.nvim)
 - GitHub Copilot via [copilot.vim](https://github.com/github/copilot.vim) and
 [CopilotChat.nvim](https://github.com/CopilotC-Nvim/CopilotChat.nvim)
