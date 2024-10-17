@@ -23,6 +23,7 @@ return {
     config = function()
       require("CopilotChat").setup({
         show_help = false,
+        auto_insert_mode = true,
         window = {
           layout = "float",
           width = 0.7,
