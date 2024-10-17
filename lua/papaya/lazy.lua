@@ -1,4 +1,4 @@
--- Bootstrap lazy.nvim
+-- bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -18,7 +18,19 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = { { import = "plugins" } },
   install = { colorscheme = { "kanagawa" } },
-  checker = { enabled = true },
+  checker = {
+    enabled = true,
+    frequency = 86400, -- 24 hours
+  },
+  change_detection = {
+    notify = false,
+  },
+  ui = {
+    border = "rounded",
+    backdrop = 100,
+    title = "Lazy",
+    title_pos = "left",
+  },
 })
 
 vim.keymap.set("n", "<leader>pl", ":Lazy<CR>", { desc = "Open Lazy" })
