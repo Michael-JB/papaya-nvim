@@ -11,5 +11,5 @@ vim.opt.shiftwidth = 2
 -- share clipboard with system
 vim.opt.clipboard = "unnamedplus"
 
--- relative line numbering
-vim.opt.relativenumber = true
+-- always show line numbering
+vim.opt.number = true
