@@ -8,6 +8,8 @@ return {
           -- Configure formatters here
           lua = { "stylua" },
           python = { "isort", "black" },
+          typescript = { "prettier" },
+          javascript = { "prettier" },
         },
         default_format_opts = {
           lsp_format = "fallback",
