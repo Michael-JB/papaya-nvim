@@ -10,6 +10,8 @@
 A fast, modern, modular, simple, and extensible Neovim configuration handcrafted by
 [Michael-JB](https://github.com/Michael-JB).
 
+![Screenshot](screenshot.png)
+
 > Note: This is my personal Neovim configuration. I may add/remove/change things at any
 time, so I do not recommend tracking this repository. Instead, copy the parts that you like or 
 fork it as a starting point for your own configuration.
