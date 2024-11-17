@@ -54,7 +54,7 @@ fork it as a starting point for your own configuration.
 - A terminal that supports true colour and undercurl, e.g., iTerm2 or WezTerm.
 - A [Nerd Font](https://www.nerdfonts.com/) of your choice for icons
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) for searching with Telescope
-- [Node.js](https://nodejs.org/) >= 12.12.0 for GitHub Copilot
+- [Node.js](https://nodejs.org/) for GitHub Copilot
 - Language-specific package managers (e.g., `cargo` and `npm`) for LSP servers in these languages
 
 ## Install
