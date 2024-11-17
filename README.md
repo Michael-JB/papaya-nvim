@@ -41,17 +41,29 @@ fork it as a starting point for your own configuration.
 
 ## Prerequisites
 
-(TODO)
+> Note: I've only tested this configuration on Unix systems.
+
+### Required
+- [Git](https://git-scm.com/) >= 2.19.0
+- [Neovim](https://neovim.io/) >= 0.10.0
+- A C compiler toolchain for `tree-sitter`
+([more info](https://github.com/nvim-treesitter/nvim-treesitter#requirements))
+- Some things that you probably have already: `curl`, `tar`, `unzip`, `gzip`.
+
+### Optional (but recommended)
+- A terminal that supports true colour and undercurl, e.g., iTerm2 or WezTerm.
+- A [Nerd Font](https://www.nerdfonts.com/) of your choice for icons
+- [Ripgrep](https://github.com/BurntSushi/ripgrep) for searching with Telescope
+- [Node.js](https://nodejs.org/) >= 12.12.0 for GitHub Copilot
+- Language-specific package managers (e.g., `cargo` and `npm`) for LSP servers in these languages
 
 ## Install
 
 1. Clone this repository to `~/.config/nvim`:
-
 ```sh
 mkdir -p ~/.config
 git clone git@github.com:Michael-JB/papaya-nvim.git ~/.config/nvim
 ```
-
 2. Run `nvim`. It will automatically install the plugins.
-
 3. Run `:checkhealth` to make sure everything is set up correctly.
+4. Run `:Copilot setup` to set up GitHub Copilot.
