@@ -33,6 +33,7 @@ return {
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show hover information" })
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+      vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "Go to references" })
       vim.keymap.set("n", "gl", vim.diagnostic.open_float, { desc = "Show diagnostic" })
       vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, { desc = "Show code actions" })
       vim.keymap.set("n", "<leader>lj", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
