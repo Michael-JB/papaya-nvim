@@ -17,7 +17,7 @@ return {
       { "<leader>ar", "<cmd>CopilotChatReview <CR>", mode = { "n", "v" }, desc = "Review selection" },
       { "<leader>ad", "<cmd>CopilotChatDocs <CR>", mode = { "n", "v" }, desc = "Document selection" },
       { "<leader>at", "<cmd>CopilotChatTests <CR>", mode = { "n", "v" }, desc = "Test selection" },
-      { "<leader>af", "<cmd>CopilotChatFixDiagnostic <CR>", mode = { "n", "v" }, desc = "Fix diagnostic" },
+      { "<leader>af", "<cmd>CopilotChatFix <CR>", mode = { "n", "v" }, desc = "Fix diagnostic" },
       { "<leader>ao", "<cmd>CopilotChatOptimize <CR>", mode = { "n", "v" }, desc = "Optimize selection" },
     },
     opts = {
