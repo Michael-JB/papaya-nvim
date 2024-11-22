@@ -28,7 +28,8 @@ return {
       lspconfig.rust_analyzer.setup({})
       lspconfig.yamlls.setup({})
       lspconfig.helm_ls.setup({})
-      lspconfig.pylsp.setup({})
+      lspconfig.ruff.setup({})
+      lspconfig.pyright.setup({})
       lspconfig.ts_ls.setup({})
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show hover information" })
