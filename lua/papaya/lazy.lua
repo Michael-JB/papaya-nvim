@@ -20,7 +20,7 @@ require("lazy").setup({
   install = { colorscheme = { "kanagawa" } },
   checker = {
     enabled = true,
-    frequency = 86400, -- 24 hours
+    frequency = 604800, -- 1 week
   },
   change_detection = {
     notify = false,
