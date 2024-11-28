@@ -7,6 +7,7 @@ return {
         formatters_by_ft = {
           -- Configure formatters here
           lua = { "stylua" },
+          bash = { "shfmt" },
           python = { "ruff_format", "ruff_fix", "ruff_organize_imports" },
           typescript = { "prettier" },
           javascript = { "prettier" },
