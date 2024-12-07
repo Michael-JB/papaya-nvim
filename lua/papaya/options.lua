@@ -13,3 +13,6 @@ vim.opt.clipboard = "unnamedplus"
 
 -- always show line numbering
 vim.opt.number = true
+
+-- don't wrap lines
+vim.opt.wrap = false
