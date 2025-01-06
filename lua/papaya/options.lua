@@ -14,5 +14,8 @@ vim.opt.clipboard = "unnamedplus"
 -- always show line numbering
 vim.opt.number = true
 
+-- use relative line numbering
+vim.opt.relativenumber = true
+
 -- don't wrap lines
 vim.opt.wrap = false
