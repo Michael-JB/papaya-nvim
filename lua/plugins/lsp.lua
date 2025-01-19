@@ -32,6 +32,7 @@ return {
       lspconfig.pyright.setup({})
       lspconfig.ts_ls.setup({})
       lspconfig.bashls.setup({})
+      lspconfig.zls.setup({})
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show hover information" })
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
