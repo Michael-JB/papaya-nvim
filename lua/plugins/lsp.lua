@@ -1,10 +1,15 @@
 return {
   {
+    "mason-org/mason.nvim",
+    event = "VeryLazy",
+    opts = {},
+  },
+  {
     "mason-org/mason-lspconfig.nvim",
     event = "VeryLazy",
     opts = {},
     dependencies = {
-      { "mason-org/mason.nvim", opts = {} },
+      "mason-org/mason.nvim",
       "neovim/nvim-lspconfig",
     },
     keys = {
@@ -18,7 +23,7 @@ return {
       { "<leader>lr", vim.lsp.buf.rename, desc = "Rename symbol" },
       { "<leader>li", ":LspInfo<CR>", desc = "Show LSP information" },
       { "<leader>lm", ":Mason<CR>", desc = "Open Mason" },
-    }
+    },
   },
   {
     -- Helm sucks: it requires that yaml templates have a `.yaml` extension, even though they're
