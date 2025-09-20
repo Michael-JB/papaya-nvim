@@ -67,3 +67,10 @@ git clone git@github.com:Michael-JB/papaya-nvim.git ~/.config/nvim
 2. Run `nvim`. It will automatically install the plugins.
 3. Run `:checkhealth` to make sure everything is set up correctly.
 4. Run `:Copilot setup` to set up GitHub Copilot.
+
+## Usage
+
+- The `<leader>` key is mapped to `Space`. To view available commands, press
+  the leader key and wait for the which-key menu to appear.
+- You can install language servers, linters and formatters with Mason. Open
+  Mason with `<leader>lm`.
