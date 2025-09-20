@@ -31,8 +31,7 @@ fork it as a starting point for your own configuration.
 - Fuzzy-search everywhere via [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - Fast code navigation via [flash.nvim](https://github.com/folke/flash.nvim)
 - Annotated keymaps via [which-key.nvim](https://github.com/folke/which-key.nvim)
-- GitHub Copilot via [copilot.vim](https://github.com/github/copilot.vim) and
-[CopilotChat.nvim](https://github.com/CopilotC-Nvim/CopilotChat.nvim)
+- GitHub Copilot via [copilot.vim](https://github.com/github/copilot.vim)
 - Inline git blame via [git-blame.nvim](https://github.com/f-person/git-blame.nvim)
 - Seamless navigation to tmux via
 [nvim-tmux-navigation](https://github.com/alexghergh/nvim-tmux-navigation)
@@ -72,5 +71,6 @@ git clone git@github.com:Michael-JB/papaya-nvim.git ~/.config/nvim
 
 - The `<leader>` key is mapped to `Space`. To view available commands, press
   the leader key and wait for the which-key menu to appear.
-- You can install language servers, linters and formatters with Mason. Open
-  Mason with `<leader>lm`.
+- You can install language servers with Mason. Open Mason with `<leader>lm`.
+- You have to configure formatters by modifying `lua/plugins/fmt.lua`.
+  Configured formatters will automatically be installed via Mason.
