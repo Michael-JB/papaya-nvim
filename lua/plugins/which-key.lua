@@ -4,9 +4,9 @@ return {
   opts = {
     delay = 1000,
     spec = {
-      { "<leader>a", group = "AI" },
       { "<leader>s", group = "Search" },
       { "<leader>l", group = "LSP" },
+      { "<leader>g", group = "Git" },
       { "<leader>t", group = "Themes" },
       { "<leader>p", group = "Plugins" },
     },
