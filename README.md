@@ -33,8 +33,6 @@ fork it as a starting point for your own configuration.
 - Annotated keymaps via [which-key.nvim](https://github.com/folke/which-key.nvim)
 - GitHub Copilot via [copilot.vim](https://github.com/github/copilot.vim)
 - Inline git status and blame via [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-- Seamless navigation to tmux via
-[nvim-tmux-navigation](https://github.com/alexghergh/nvim-tmux-navigation)
 - Light and dark themes via [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)
 - ...
 
