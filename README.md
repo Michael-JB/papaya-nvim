@@ -63,7 +63,7 @@ git clone git@github.com:Michael-JB/papaya-nvim.git ~/.config/nvim
 ```
 2. Run `nvim`. It will automatically install the plugins.
 3. Run `:checkhealth` to make sure everything is set up correctly.
-4. Run `:Copilot setup` to set up GitHub Copilot.
+4. Run `<leader>as` to set up GitHub Copilot.
 
 ## Usage
 
